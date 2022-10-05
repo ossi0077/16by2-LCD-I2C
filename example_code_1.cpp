@@ -4,23 +4,23 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup()
 {
-	//»ç¿ë Àü¿¡ lcd¸¦ ÃÊ±âÈ­ ÇØÁÝ´Ï´Ù.
+	//ì‚¬ìš© ì „ì— lcdë¥¼ ì´ˆê¸°í™” í•´ì¤ë‹ˆë‹¤.
 	lcd.init();
 
-	//lcdÀÇ ¹é¶óÀÌÆ®¸¦ ÀÛµ¿ÇÕ´Ï´Ù.
+	//lcdì˜ ë°±ë¼ì´íŠ¸ë¥¼ ìž‘ë™í•©ë‹ˆë‹¤.
 	lcd.backlight();
 
-	//lcdÀÇ À§Ä¡¸¦ (0,0)À¸·Î ÁöÁ¤ÇÕ´Ï´Ù.(ÁÂ»ó´Ü ±âÁØ)
+	//lcdì˜ ìœ„ì¹˜ë¥¼ (0,0)ìœ¼ë¡œ ì§€ì •í•©ë‹ˆë‹¤.(ì¢Œìƒë‹¨ ê¸°ì¤€)
 	lcd.setCursor(0, 0);
 
-	//Ãâ·ÂÇÒ ¹®±¸¸¦ ÀÛ¼ºÇÕ´Ï´Ù.
+	//ì¶œë ¥í•  ë¬¸êµ¬ë¥¼ ìž‘ì„±í•©ë‹ˆë‹¤.
 	lcd.print("Gongzipsa");
 
-	//lcdÀÇ À§Ä¡¸¦ (0,1)·Î ÁöÁ¤ÇÕ´Ï´Ù.
+	//lcdì˜ ìœ„ì¹˜ë¥¼ (0,1)ë¡œ ì§€ì •í•©ë‹ˆë‹¤.
 	lcd.setCursor(0, 1);
 
-	//val °ªÀ» Ãâ·ÂÇÕ´Ï´Ù.
-	int val = 18;
+	//val ê°’ì„ ì¶œë ¥í•©ë‹ˆë‹¤.
+	int val = 1004;
 	lcd.print(val);
 }
 
